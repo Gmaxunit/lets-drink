@@ -1,0 +1,18 @@
+page-login {
+
+	ion-content{
+		.facebook-button{
+			background: blue;
+		}
+		.google-button{
+			background: red;
+		}
+		.other-login-group{
+			text-align: center;
+			.other-login{
+				color: blue;
+				text-decoration: underline;
+			}
+		}
+	}
+}
