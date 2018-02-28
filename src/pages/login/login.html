@@ -1,5 +1,5 @@
 <ion-content padding>
-	<ion-title>Login to start your happy hour search</ion-title>
+	<div class="login-greeting">Login to start your happy hour search</div>
 	<!-- <ion-item>
 		<ion-label color="primary" 
 				   floating>Email:</ion-label>
@@ -9,9 +9,9 @@
 		<ion-label color="primary" 
 				   floating>Password:</ion-label>
 		<ion-input  type="password"></ion-input>
-	</ion-item> -->
-	<button ion-button full>Login</button>
-	<button class="facebook-button" ion-button full>Login with Facebook</button>
-	<button class="google-button" ion-button full>Login with Google</button>
-	<p class="guest">Continue as Guest</p>
+	</ion-item> 
+	<button ion-button full>Login</button>-->
+	<button class="facebook-button" (click)="this.chooseLogin('fbLogin')" ion-button full>Login with Facebook</button>
+	<button class="google-button" (click)="this.chooseLogin('gLogin')" ion-button full>Login with Google</button>
+	<p (click)="this.chooseLogin('guest')" class="guest">Continue as Guest</p>
 </ion-content>

@@ -7,7 +7,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl: 'login.html'
 })
 export class LoginPage {
-  public loginChoice: any;
   public guest = false;
   
   constructor(public navCtrl: NavController) {}
@@ -20,14 +19,17 @@ export class LoginPage {
     switch (choice) {
       case 'fbLogin': {
         //authorize with fb
+        this.authorizeFB();
         break;
       }
       case 'gLogin': {
         //authorize with google auth
+        this.authorizeGoogle();
         break;
       }
       case 'guest': {
         //continue to app as guest
+        this.proceedAsGuest();
         break;
       }
       default:
@@ -38,15 +40,15 @@ export class LoginPage {
   /**
    * Log user in with Facebook authentication
    */
-  authorizeFB() {
-    
+  authorizeFB(): void {
+    console.log('authorize with fb');
   }
   
   /**
    * Log user in with Google authentication
    */
-  authorizeGoogle() {
-    
+  authorizeGoogle(): void {
+    console.log('authorize with google auth');
   }
   
   /**
@@ -54,7 +56,7 @@ export class LoginPage {
    * Guest and have all features available other than favoriting
    * and reviews will be saved as anonymous user
    */
-  proceedAsGuest() {
-    
+  proceedAsGuest(): void {
+    console.log('continue as guest');
   }
 }//end class
