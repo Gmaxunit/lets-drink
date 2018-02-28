@@ -7,12 +7,10 @@ page-login {
 		.google-button{
 			background: red;
 		}
-		.other-login-group{
+		.guest{
 			text-align: center;
-			.other-login{
-				color: blue;
-				text-decoration: underline;
-			}
+			color: blue;
+			text-decoration: underline;
 		}
 	}
 }
