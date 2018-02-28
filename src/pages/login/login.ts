@@ -7,12 +7,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl: 'login.html'
 })
 export class LoginPage {
-  
-  private email: any;
-  private pw: any;
   public loginChoice: any;
   public guest = false;
-  public loginInfo: FormGroup;
   
   constructor(public navCtrl: NavController) {}
 
@@ -22,21 +18,12 @@ export class LoginPage {
    */
   chooseLogin(choice): void {
     switch (choice) {
-      case 'ldLogin': {
-        //authorize with email and pw
-        this.authorizeLD();
-        break;
-      }
       case 'fbLogin': {
         //authorize with fb
         break;
       }
       case 'gLogin': {
         //authorize with google auth
-        break;
-      }
-      case 'create': {
-        //go to create acct page
         break;
       }
       case 'guest': {
@@ -47,14 +34,6 @@ export class LoginPage {
         break;
     }
   }//end chooseLogin
-  
-  /**
-   * Authorize user with app specific login with user
-   * email and password
-   */
-  authorizeLD() {
-    
-  }
   
   /**
    * Log user in with Facebook authentication
@@ -78,12 +57,4 @@ export class LoginPage {
   proceedAsGuest() {
     
   }
-  
-  /**
-   * Send user to create account page to make an account 
-   * in the app rather than Facebook/Google auth options
-   */
-  goToCreateAccount() {
-    
-  }  
 }//end class
