@@ -1,31 +1,38 @@
 @import '../../app/app.scss';
 
 page-login {
-	ion-content{
-		.login-greeting, {
+	ion-content.content {
+		background: lightskyblue;
+		.login-greeting {
 			font-family: "Comic Sans MS", cursive, sans-serif;
-			color: $light-blue;
+			color: darkgoldenrod;
 			font-style: oblique;
 			font-weight: bold;
 			font-size: 1.4em;
 			text-align: center;
-		}
-		button.facebook-button{
-			background: $facebook-blue;
-			ion-icon{
-				margin-right: 6px;	
-			}
-		}
-		button.google-button{
-			background: $google-red;
-			ion-icon{
-				margin-right: 6px;	
-			}
-		}
-		.guest{
+		}//end login-greeting
+
+		.button-group {
+			padding: 5% 8% 0% 8%;
+
+			button.facebook-button {
+				background: $facebook-blue;
+				ion-icon{
+					margin-right: 6px;	
+				}
+			}//end button-facebook
+			button.google-button {
+				background: $google-red;
+				ion-icon{
+					margin-right: 6px;	
+				}
+			}//end button.google-button
+		}//end button-group
+		
+		.guest {
 			text-align: center;
-			color: blue;
+			color: darkgoldenrod;
 			text-decoration: underline;
-		}
-	}
-}
+		}//end guest
+	}//end ion-content
+}//end page

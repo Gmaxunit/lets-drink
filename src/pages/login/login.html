@@ -1,10 +1,14 @@
 <ion-content padding>
 	<div class="login-greeting">{{loginText.greeting}}</div>
-	<button class="facebook-button" (click)="this.authorizeFB()" ion-button full>
-			<ion-icon name="logo-facebook"></ion-icon>
-			<span>{{loginText.facebook.button}}</span></button>
-	<button class="google-button" (click)="this.authorizeGoogle()" ion-button full>
-			<ion-icon name="logo-googleplus"></ion-icon>
-			<span>{{loginText.google.button}}</span></button>
+	<div class="button-group">
+		<button class="facebook-button" (click)="this.authorizeFB()" ion-button full>
+				<ion-icon name="logo-facebook"></ion-icon>
+				<span>{{loginText.facebook.button}}</span>
+		</button>
+		<button class="google-button" (click)="this.authorizeGoogle()" ion-button full>
+				<ion-icon name="logo-googleplus"></ion-icon>
+				<span>{{loginText.google.button}}</span>
+		</button>
+	</div>
 	<p (click)="this.proceedAsGuest()" class="guest">{{loginText.guest.continue}}</p>
 </ion-content>
