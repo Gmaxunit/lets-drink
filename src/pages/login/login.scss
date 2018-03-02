@@ -1,18 +1,26 @@
+@import '../../app/app.scss';
+
 page-login {
 	ion-content{
 		.login-greeting, {
 			font-family: "Comic Sans MS", cursive, sans-serif;
-			color: #4991e3;
+			color: $light-blue;
 			font-style: oblique;
 			font-weight: bold;
 			font-size: 1.4em;
 			text-align: center;
 		}
-		.facebook-button{
-			background: blue;
+		button.facebook-button{
+			background: $facebook-blue;
+			ion-icon{
+				margin-right: 6px;	
+			}
 		}
-		.google-button{
-			background: red;
+		button.google-button{
+			background: $google-red;
+			ion-icon{
+				margin-right: 6px;	
+			}
 		}
 		.guest{
 			text-align: center;
